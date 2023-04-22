@@ -203,7 +203,11 @@ services:
       smo:
 
   flows:
-    image: ${FLOWS_IMAGE}
+    image: ${FLOWS_IMAGE}-configured
+    build:
+      context: ./flows
+      args:
+        - BASEIMAGE=${FLOWS_IMAGE}
     container_name: flows
     hostname: flows
     ports:
