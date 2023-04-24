@@ -32,6 +32,7 @@ target/
 
 # Opendaylight yang-tools
 yang-gen-sal/
+.java/
 
 # IDE (Eclipse, vsCode) related
 .project
